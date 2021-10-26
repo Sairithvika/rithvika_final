@@ -37,7 +37,7 @@ docker image build -t nginx-with-html .
 docker container run -p 80:80 --rm nginx-with-html
 docker image ls
 docker image tag --help
-docker image tag nginx-with-html:latest atingupta2005/nginx-with-html:latest
+docker image tag nginx-with-html:latest sairithvika/nginx-with-html:latest
 docker image ls
 docker push
 
@@ -59,7 +59,7 @@ docker container run --publish 8080:80 --detach --name webhost nginx
 
 #Build Your Own Dockerfile and Run Containers From It
 
-cd dockerfile-assignment-1
+cd dockerfile
 vim Dockerfile
 docker build cmd
 docker build -t testnode .
